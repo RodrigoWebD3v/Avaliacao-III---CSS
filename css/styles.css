@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
+
+header{
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul, li, a{
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    
+}
+
+header  a{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header a{
+    color: white;
+    font-size: 16px;
+}
+
+h3{
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+}
+
+section{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    padding: 20px;
+    flex-grow: 1;
+    width: 270px;
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+
+
+@media (max-width: 799px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr; /* A logo ocupa o tamanho necessário e o menu ocupa o restante do espaço */
+        align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    header a {
+        font-size: 40px; /* Aumenta o tamanho da fonte do logo */
+        margin-left: 40px; /* Espaçamento maior à esquerda */
+    }
+
+    header nav a {
+        margin-left: 0px; /* Remove margem à esquerda dos links de navegação */
+        font-size: 20px; /* Tamanho da fonte dos links de navegação */
+    }
+
+    header nav li {
+        background-color: rgb(158, 158, 158); /* Fundo para itens do menu */
+        width: 100%; /* Largura dos itens do menu */
+    }
+
+    nav {
+        justify-self: end; /* Alinha o menu à direita */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Exibe itens do menu em coluna */
+        align-items: flex-start; /* Alinha os itens do menu à esquerda */
+    }
+
+    nav ul li {
+        text-align: start; /* Alinhamento do texto dos itens do menu */
+    }
+}
+
+@media (max-width: 600px) {
+    
+
+    article{
+        max-width: 100%;
+    }
+
+    section{
+        width: 90%;
+    }
+}
