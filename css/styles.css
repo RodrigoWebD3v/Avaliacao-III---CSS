@@ -1,20 +1,23 @@
+/* Importa a fonte Roboto do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-*{
+/* Define estilos gerais para todos os elementos */
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto a todos os elementos */
 }
 
-p{
+/* Define estilos para parágrafos */
+p {
     color: rgb(0, 0, 0);
     text-align: center;
     font-weight: bold;
 }
 
-header{
+/* Define estilos para o cabeçalho */
+header {
     padding: 30px;
     background-color: black;
     display: flex;
@@ -22,53 +25,59 @@ header{
     justify-content: space-between;
 }
 
-header ul, li, a{
+/* Define estilos para a lista de navegação no cabeçalho */
+header ul, li, a {
     display: flex;
     gap: 16px;
     text-decoration: none;
-    
 }
 
-header  a{
+/* Define estilos para os links de navegação no cabeçalho */
+header a {
     font-size: 26px;
     font-weight: bold;
+    color: white;
 }
 
-header a{
+/* Define estilos para os links de navegação no cabeçalho */
+header a {
     color: white;
     font-size: 16px;
 }
 
-h3{
+/* Define estilos para títulos de nível 3 */
+h3 {
     padding: 20px;
     text-align: center;
     font-size: 26px;
 }
 
-section{
+/* Define estilos para a seção principal */
+section {
     padding: 20px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
+    width: 80%; /* Largura da seção */
+    margin: 0 auto; /* Centraliza a seção */
 }
 
+/* Define estilos para os artigos */
 article {
     padding: 20px;
     flex-grow: 1;
-    width: 270px;
-    max-width: 600px;
+    width: 270px; /* Largura dos artigos */
+    max-width: 600px; /* Largura máxima dos artigos */
 }
 
+/* Define estilos para imagens */
 img {
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 600px; /* Largura máxima das imagens */
 }
 
-
-
+/* Define estilos para telas menores que 800px */
 @media (max-width: 799px) {
     header {
         display: grid;
@@ -106,14 +115,13 @@ img {
     }
 }
 
+/* Define estilos para telas menores que 600px */
 @media (max-width: 600px) {
-    
-
-    article{
-        max-width: 100%;
+    article {
+        max-width: 100%; /* Define a largura máxima dos artigos como 100% */
     }
 
-    section{
-        width: 90%;
+    section {
+        width: 90%; /* Define a largura da seção como 90% */
     }
 }
